@@ -1,0 +1,23 @@
+{
+  "name": "helpdesk",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build:css": "postcss build src/tailwind.css -o css/style.css",
+    "watch": "watch \"npm run build:css\" ./src",
+    "prod": "cross-env NODE_ENV=production postcss build src/tailwind.css -o css/style.css"
+  },
+  "keywords": [],
+  "author": "Adarsh DK",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.4.6",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "cross-env": "^7.0.0",
+    "cssnano": "^4.1.10"
+  }
+}
